@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -69,7 +70,7 @@ section {
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: end;
+                justify-content: center;
                 align-items: end;
                 gap: 20px;
 
@@ -80,6 +81,7 @@ section {
                 & h2 {
                     font-size: 8em;
                     line-height: 1em;
+                    font-family: "League Gothic", sans-serif;
                 }
 
                 & .description {
@@ -99,8 +101,18 @@ section {
                     color: black;
                     cursor: pointer;
                     font-weight: bold;
+                    font-family: "League Gothic", sans-serif;
                 }
             }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 200px;
+            width: 100%;
+            top: 50%;
+            border-top: 1px solid white;
         }
     }
     
@@ -130,6 +142,7 @@ section {
             & img {
                 width: 30px;
                 margin-top: 4px;
+                cursor: pointer;
             }
 
             &:hover {
@@ -152,6 +165,7 @@ section {
     
         & .number {
             font-size: 5em;
+            font-family: "League Gothic", sans-serif;
         }
 
         & ul {
