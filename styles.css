@@ -194,6 +194,7 @@ section {
         & .item {
             transform: translateX(100vw);
             transition: 0.5s;
+            opacity: 0;
 
             & .car-img {
                 & img {
@@ -220,6 +221,25 @@ section {
 
                 & .information {
                     transition-delay: 0.9s;
+                }
+            }
+        }
+
+        & .active {
+            transform: translateX(0);
+            transition: 0.5s;
+            opacity: 1;
+
+            & .car-img {
+                & img {
+                    transform: rotate(-20deg);
+                }
+            }
+
+            & .content {
+                & .car-information, h2, .description, .information {
+                    transform: translateX(0);
+                    opacity: 1;
                 }
             }
         }
